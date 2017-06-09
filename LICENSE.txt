@@ -1,0 +1,2 @@
+See license agreement at: https://www.beco.io/sdk-example-license
+
