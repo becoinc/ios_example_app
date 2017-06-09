@@ -36,17 +36,17 @@ The app has a simple flow to authenticate the user and start the Beco SDK scanni
 
 #### ```/Resources/Initial.plist``` configuration file
 This file contains all the configuration settings the app needs to start the Beco SDK scanning and to access the realtime APIs from the web app.
-Resource Key   |Description   |Default Setting   
-|-|-|-|
-email|The email or system account used to establish the oAuth session which is passed down to the web app for use to access the Beco realtime API's.  Contact hello@beco.io to receive a system account if you have not already received one.||
-password|The password used to establish the oAuth session.||
-clientId|The client id the Beco SDK uses to establish a session with the Beco servers while it is scanning for beacons. Contact hello@beco.io to receive these credentials.||
-clientSecret|The client secret the Beco SDK uses to establish a session with the Beco servers while it is scanning for beacons. Contact hello@beco.io to receive these credentials.||
-apiHostname|The Beco API host.  You should not change this unless instructed by the Beco support team.|api.beco.io|
-baseUrl|The base url of *your* web app that will be shown within the sell app (https://yourwebapp.com).||
-pages/startPage|The initial page that is shown to the user *before* the user is prompted to allow access to Location Services (which is required by the Beco SDK).|/hello.html|
-pages/helpPage|The help page that is shown when the user taps the "Help" icon on the app toolbar|/help.html|
-pages/appPage|The primary page that is shown while the app is scanning for location changes.  When the app detects a location change it refreshes this page with a valid oAuth token and the users handset id (hsid).  This page should be your major focus of development.|/index.html|
+Resource Key|Description|Default Setting   
+-|-|-
+email|The email or system account used to establish the oAuth session which is passed down to the web app for use to access the Beco realtime API's.  Contact hello@beco.io to receive a system account if you have not already received one.|
+password|The password used to establish the oAuth session.|
+clientId|The client id the Beco SDK uses to establish a session with the Beco servers while it is scanning for beacons. Contact hello@beco.io to receive these credentials.|
+clientSecret|The client secret the Beco SDK uses to establish a session with the Beco servers while it is scanning for beacons. Contact hello@beco.io to receive these credentials.|
+apiHostname|The Beco API host.  You should not change this unless instructed by the Beco support team.|api.beco.io
+baseUrl|The base url of *your* web app that will be shown within the sell app (https://yourwebapp.com).|
+pages/startPage|The initial page that is shown to the user *before* the user is prompted to allow access to Location Services (which is required by the Beco SDK).|/hello.html
+pages/helpPage|The help page that is shown when the user taps the "Help" icon on the app toolbar|/help.html
+pages/appPage|The primary page that is shown while the app is scanning for location changes.  When the app detects a location change it refreshes this page with a valid oAuth token and the users handset id (hsid).  This page should be your major focus of development.|/index.html
 
 ## Get Started
 ### Get the source code
