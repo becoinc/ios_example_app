@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>email</key>
+	<string></string>
+	<key>password</key>
+	<string></string>
+	<key>accessCodeLogin</key>
+	<false/>
+	<key>clientId</key>
+	<string></string>
+	<key>clientSecret</key>
+	<string></string>
+	<key>apiHostname</key>
+	<string>api.beco.io</string>
+	<key>baseUrl</key>
+	<string>https://locatlhost</string>
+	<key>pages</key>
+	<dict>
+		<key>startPage</key>
+		<string>/hello.html</string>
+		<key>helpPage</key>
+		<string>/help.html</string>
+		<key>appPage</key>
+		<string>/index.html</string>
+	</dict>
+</dict>
+</plist>

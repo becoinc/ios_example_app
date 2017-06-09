@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		138D93F31E92935C0084C09E /* StartSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D93F21E92935C0084C09E /* StartSDK.swift */; };
+		138D93F51E929B4E0084C09E /* GetAuthQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D93F41E929B4E0084C09E /* GetAuthQuery.swift */; };
+		1399E7E31E943D5D00B3EFB4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1399E7E21E943D5D00B3EFB4 /* User.swift */; };
+		13E768901E8BFCC10038877B /* Initial.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13E7688F1E8BFCC10038877B /* Initial.plist */; };
+		31136D861EC4E62C0080984F /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31136D851EC4E62C0080984F /* Logging.swift */; };
+		31CFADED1EC3954C004E2C43 /* beco-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CFADEA1EC3954C004E2C43 /* beco-logo.png */; };
+		31CFADEE1EC3954C004E2C43 /* beco-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CFADEB1EC3954C004E2C43 /* beco-logo@2x.png */; };
+		31CFADEF1EC3954C004E2C43 /* beco-logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CFADEC1EC3954C004E2C43 /* beco-logo@3x.png */; };
+		31CFADF11EC4A82D004E2C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31CFADF01EC4A82D004E2C43 /* Main.storyboard */; };
+		31CFADF51EC4D3F5004E2C43 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CFADF41EC4D3F5004E2C43 /* StartViewController.swift */; };
+		A91529EF1C1E1F330090E065 /* BecoAPIQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91529EE1C1E1F330090E065 /* BecoAPIQuery.swift */; };
+		A92F492F1BE51A9000AB4CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F492E1BE51A9000AB4CAE /* AppDelegate.swift */; };
+		A92F49391BE51A9000AB4CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92F49381BE51A9000AB4CAE /* Assets.xcassets */; };
+		A94910651C31EC360042FE58 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94910641C31EC360042FE58 /* CoreLocation.framework */; };
+		A94910671C31EC530042FE58 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94910661C31EC530042FE58 /* CoreBluetooth.framework */; };
+		A984D8DB1BE69FD9001C1C3F /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984D8DA1BE69FD9001C1C3F /* ServerConnection.swift */; };
+		A9FBBFC51BF7951800C5B9DE /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FBBFC41BF7951800C5B9DE /* Beacon.swift */; };
+		A9FBBFC91BF7A4FA00C5B9DE /* BecoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FBBFC81BF7A4FA00C5B9DE /* BecoManager.swift */; };
+		A9FCEA9B1BE5582800236B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F49301BE51A9000AB4CAE /* ViewController.swift */; };
+		EAACC7711EE076EE000DB823 /* BecoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC76E1EE076EE000DB823 /* BecoSDK.framework */; };
+		EAACC7721EE076EE000DB823 /* BecoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC76E1EE076EE000DB823 /* BecoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EAACC7731EE076EE000DB823 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC76F1EE076EE000DB823 /* ObjcExceptionBridging.framework */; };
+		EAACC7741EE076EE000DB823 /* ObjcExceptionBridging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC76F1EE076EE000DB823 /* ObjcExceptionBridging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EAACC7751EE076EE000DB823 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC7701EE076EE000DB823 /* XCGLogger.framework */; };
+		EAACC7761EE076EE000DB823 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC7701EE076EE000DB823 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAACC7771EE076EE000DB823 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EAACC7741EE076EE000DB823 /* ObjcExceptionBridging.framework in Embed Frameworks */,
+				EAACC7721EE076EE000DB823 /* BecoSDK.framework in Embed Frameworks */,
+				EAACC7761EE076EE000DB823 /* XCGLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		138D93F21E92935C0084C09E /* StartSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartSDK.swift; path = Beco/StartSDK.swift; sourceTree = SOURCE_ROOT; };
+		138D93F41E929B4E0084C09E /* GetAuthQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAuthQuery.swift; sourceTree = "<group>"; };
+		1399E7E21E943D5D00B3EFB4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		13E7688F1E8BFCC10038877B /* Initial.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Initial.plist; sourceTree = "<group>"; };
+		31136D851EC4E62C0080984F /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		31136D871EC5045F0080984F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		31136D881EC5045F0080984F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		31CFADEA1EC3954C004E2C43 /* beco-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beco-logo.png"; sourceTree = "<group>"; };
+		31CFADEB1EC3954C004E2C43 /* beco-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beco-logo@2x.png"; sourceTree = "<group>"; };
+		31CFADEC1EC3954C004E2C43 /* beco-logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beco-logo@3x.png"; sourceTree = "<group>"; };
+		31CFADF01EC4A82D004E2C43 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		31CFADF41EC4D3F5004E2C43 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		A91529EE1C1E1F330090E065 /* BecoAPIQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BecoAPIQuery.swift; sourceTree = "<group>"; };
+		A92F492B1BE51A9000AB4CAE /* BecoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BecoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92F492E1BE51A9000AB4CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A92F49301BE51A9000AB4CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A92F49381BE51A9000AB4CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A92F493D1BE51A9000AB4CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94910641C31EC360042FE58 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A94910661C31EC530042FE58 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A984D8DA1BE69FD9001C1C3F /* ServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
+		A9FBBFC41BF7951800C5B9DE /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		A9FBBFC81BF7A4FA00C5B9DE /* BecoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BecoManager.swift; sourceTree = "<group>"; };
+		EAACC76E1EE076EE000DB823 /* BecoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BecoSDK.framework; path = "Library/Release-universal/BecoSDK.framework"; sourceTree = SOURCE_ROOT; };
+		EAACC76F1EE076EE000DB823 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = "Library/Release-universal/ObjcExceptionBridging.framework"; sourceTree = SOURCE_ROOT; };
+		EAACC7701EE076EE000DB823 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = "Library/Release-universal/XCGLogger.framework"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A92F49281BE51A9000AB4CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAACC7711EE076EE000DB823 /* BecoSDK.framework in Frameworks */,
+				EAACC7751EE076EE000DB823 /* XCGLogger.framework in Frameworks */,
+				A94910671C31EC530042FE58 /* CoreBluetooth.framework in Frameworks */,
+				A94910651C31EC360042FE58 /* CoreLocation.framework in Frameworks */,
+				EAACC7731EE076EE000DB823 /* ObjcExceptionBridging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31CFADE71EC3938D004E2C43 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31CFADF41EC4D3F5004E2C43 /* StartViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A91529ED1C1E1CDE0090E065 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A91529EE1C1E1F330090E065 /* BecoAPIQuery.swift */,
+				138D93F41E929B4E0084C09E /* GetAuthQuery.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A92F49221BE51A9000AB4CAE = {
+			isa = PBXGroup;
+			children = (
+				EAACC76E1EE076EE000DB823 /* BecoSDK.framework */,
+				EAACC76F1EE076EE000DB823 /* ObjcExceptionBridging.framework */,
+				EAACC7701EE076EE000DB823 /* XCGLogger.framework */,
+				A92F492D1BE51A9000AB4CAE /* Beco */,
+				A9D945E21C38418E003CBADD /* Resources */,
+				A92F492C1BE51A9000AB4CAE /* Products */,
+				F94F9A2534B089FD3F1EAC15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A92F492C1BE51A9000AB4CAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A92F492B1BE51A9000AB4CAE /* BecoExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A92F492D1BE51A9000AB4CAE /* Beco */ = {
+			isa = PBXGroup;
+			children = (
+				31CFADE71EC3938D004E2C43 /* View Controllers */,
+				A91529ED1C1E1CDE0090E065 /* API */,
+				A984D8D91BE69E57001C1C3F /* Model */,
+				A92F492E1BE51A9000AB4CAE /* AppDelegate.swift */,
+				31CFADF01EC4A82D004E2C43 /* Main.storyboard */,
+				138D93F21E92935C0084C09E /* StartSDK.swift */,
+				A92F49301BE51A9000AB4CAE /* ViewController.swift */,
+				31136D851EC4E62C0080984F /* Logging.swift */,
+				A92F49381BE51A9000AB4CAE /* Assets.xcassets */,
+				A92F493D1BE51A9000AB4CAE /* Info.plist */,
+			);
+			path = Beco;
+			sourceTree = "<group>";
+		};
+		A984D8D91BE69E57001C1C3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1399E7E21E943D5D00B3EFB4 /* User.swift */,
+				A9FBBFC81BF7A4FA00C5B9DE /* BecoManager.swift */,
+				A984D8DA1BE69FD9001C1C3F /* ServerConnection.swift */,
+				A9FBBFC41BF7951800C5B9DE /* Beacon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9D945E21C38418E003CBADD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31136D871EC5045F0080984F /* Roboto-Bold.ttf */,
+				31136D881EC5045F0080984F /* Roboto-Regular.ttf */,
+				31CFADEA1EC3954C004E2C43 /* beco-logo.png */,
+				31CFADEB1EC3954C004E2C43 /* beco-logo@2x.png */,
+				31CFADEC1EC3954C004E2C43 /* beco-logo@3x.png */,
+				13E7688F1E8BFCC10038877B /* Initial.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F94F9A2534B089FD3F1EAC15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A94910661C31EC530042FE58 /* CoreBluetooth.framework */,
+				A94910641C31EC360042FE58 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A92F492A1BE51A9000AB4CAE /* BecoExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92F49561BE51A9000AB4CAE /* Build configuration list for PBXNativeTarget "BecoExample" */;
+			buildPhases = (
+				A92F49271BE51A9000AB4CAE /* Sources */,
+				A92F49281BE51A9000AB4CAE /* Frameworks */,
+				A92F49291BE51A9000AB4CAE /* Resources */,
+				EAACC7771EE076EE000DB823 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BecoExample;
+			productName = Beco;
+			productReference = A92F492B1BE51A9000AB4CAE /* BecoExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A92F49231BE51A9000AB4CAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Beco;
+				TargetAttributes = {
+					A92F492A1BE51A9000AB4CAE = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = AJJGV9DLNK;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A92F49261BE51A9000AB4CAE /* Build configuration list for PBXProject "BecoExample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A92F49221BE51A9000AB4CAE;
+			productRefGroup = A92F492C1BE51A9000AB4CAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A92F492A1BE51A9000AB4CAE /* BecoExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A92F49291BE51A9000AB4CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31CFADEF1EC3954C004E2C43 /* beco-logo@3x.png in Resources */,
+				A92F49391BE51A9000AB4CAE /* Assets.xcassets in Resources */,
+				31CFADED1EC3954C004E2C43 /* beco-logo.png in Resources */,
+				31CFADEE1EC3954C004E2C43 /* beco-logo@2x.png in Resources */,
+				31CFADF11EC4A82D004E2C43 /* Main.storyboard in Resources */,
+				13E768901E8BFCC10038877B /* Initial.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A92F49271BE51A9000AB4CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FCEA9B1BE5582800236B74 /* ViewController.swift in Sources */,
+				A92F492F1BE51A9000AB4CAE /* AppDelegate.swift in Sources */,
+				138D93F51E929B4E0084C09E /* GetAuthQuery.swift in Sources */,
+				A9FBBFC51BF7951800C5B9DE /* Beacon.swift in Sources */,
+				A9FBBFC91BF7A4FA00C5B9DE /* BecoManager.swift in Sources */,
+				31CFADF51EC4D3F5004E2C43 /* StartViewController.swift in Sources */,
+				A984D8DB1BE69FD9001C1C3F /* ServerConnection.swift in Sources */,
+				31136D861EC4E62C0080984F /* Logging.swift in Sources */,
+				A91529EF1C1E1F330090E065 /* BecoAPIQuery.swift in Sources */,
+				1399E7E31E943D5D00B3EFB4 /* User.swift in Sources */,
+				138D93F31E92935C0084C09E /* StartSDK.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A92F49541BE51A9000AB4CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AJJGV9DLNK;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A92F49551BE51A9000AB4CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AJJGV9DLNK;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A92F49571BE51A9000AB4CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Release-universal",
+				);
+				INFOPLIST_FILE = Beco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beco.BecoExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A92F49581BE51A9000AB4CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Release-universal",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = Beco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beco.BecoExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A92F49261BE51A9000AB4CAE /* Build configuration list for PBXProject "BecoExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92F49541BE51A9000AB4CAE /* Debug */,
+				A92F49551BE51A9000AB4CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92F49561BE51A9000AB4CAE /* Build configuration list for PBXNativeTarget "BecoExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92F49571BE51A9000AB4CAE /* Debug */,
+				A92F49581BE51A9000AB4CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A92F49231BE51A9000AB4CAE /* Project object */;
+}

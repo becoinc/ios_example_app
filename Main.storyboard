@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wap-Iv-6UO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AppView-->
+        <scene sceneID="IBN-Vs-E7t">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" title="AppView" id="ubQ-WY-ISw" customClass="ViewController" customModule="BecoExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZYK-vb-GIM"/>
+                        <viewControllerLayoutGuide type="bottom" id="h2g-gm-mpy"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="HAl-ly-bZf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="sR8-zl-Zqa">
+                                <rect key="frame" x="177.5" y="635" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <toolbar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pb-iH-IfA">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem image="ic_help_outline" id="HPt-R5-1XN">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="helpClicked:" destination="ubQ-WY-ISw" id="r5a-sH-nHx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vjp-U4-aXI"/>
+                                    <barButtonItem title="Get Started!" id="XLi-uq-67h" userLabel="Action Button">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="getActionButtonClicked:" destination="ubQ-WY-ISw" id="4Du-9G-lkR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="b3p-Mh-TjC"/>
+                                    <barButtonItem image="ic_gps_fixed" style="plain" id="82x-xZ-DNQ">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="btClicked:" destination="ubQ-WY-ISw" id="XaR-0u-nP2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_bluetooth" id="bBz-Ca-RWr">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="navClicked:" destination="ubQ-WY-ISw" id="paf-zt-0Y8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ubQ-WY-ISw" id="NAC-OP-yNe"/>
+                                </connections>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSj-Ou-fNq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0wx-BO-wU7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2pb-iH-IfA" secondAttribute="trailing" id="KwY-Bh-FAU"/>
+                            <constraint firstItem="sR8-zl-Zqa" firstAttribute="centerX" secondItem="HAl-ly-bZf" secondAttribute="centerX" id="aoP-ai-5zw"/>
+                            <constraint firstAttribute="trailing" secondItem="XSj-Ou-fNq" secondAttribute="trailing" id="l0R-VN-iXG"/>
+                            <constraint firstAttribute="bottom" secondItem="2pb-iH-IfA" secondAttribute="bottom" id="lED-WL-tPj"/>
+                            <constraint firstItem="2pb-iH-IfA" firstAttribute="leading" secondItem="HAl-ly-bZf" secondAttribute="leading" id="pTC-l2-Ars"/>
+                            <constraint firstAttribute="bottom" secondItem="sR8-zl-Zqa" secondAttribute="bottom" constant="12" id="phg-jT-NHU"/>
+                            <constraint firstItem="XSj-Ou-fNq" firstAttribute="top" secondItem="HAl-ly-bZf" secondAttribute="top" id="uxa-FZ-XBp"/>
+                            <constraint firstItem="XSj-Ou-fNq" firstAttribute="leading" secondItem="HAl-ly-bZf" secondAttribute="leading" id="xDD-xB-wmM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activitySpinner" destination="sR8-zl-Zqa" id="hdZ-Ew-ddi"/>
+                        <outlet property="btAction" destination="XLi-uq-67h" id="4vd-Hz-YN1"/>
+                        <outlet property="btButton" destination="82x-xZ-DNQ" id="AXS-IO-WkJ"/>
+                        <outlet property="helpButton" destination="HPt-R5-1XN" id="BFN-7t-cIv"/>
+                        <outlet property="navButton" destination="bBz-Ca-RWr" id="CEP-2f-bUA"/>
+                        <outlet property="toolBar" destination="2pb-iH-IfA" id="Ufh-eT-Wgz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dN-XZ-zdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106" y="-35"/>
+        </scene>
+        <!--StartView-->
+        <scene sceneID="atR-TQ-AuL">
+            <objects>
+                <viewController title="StartView" id="Wap-Iv-6UO" customClass="StartViewController" customModule="BecoExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bYa-I1-gVH"/>
+                        <viewControllerLayoutGuide type="bottom" id="in7-sp-ZWW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jic-K4-l98">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9sb-fm-rUe"/>
+                    <connections>
+                        <segue destination="ubQ-WY-ISw" kind="presentation" identifier="GoSegue" modalPresentationStyle="fullScreen" id="hil-lq-UIm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cnc-Ar-oaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1217" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_bluetooth" width="24" height="24"/>
+        <image name="ic_gps_fixed" width="24" height="24"/>
+        <image name="ic_help_outline" width="24" height="24"/>
+    </resources>
+</document>
