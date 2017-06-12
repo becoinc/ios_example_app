@@ -26,29 +26,7 @@
 		A9FBBFC51BF7951800C5B9DE /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FBBFC41BF7951800C5B9DE /* Beacon.swift */; };
 		A9FBBFC91BF7A4FA00C5B9DE /* BecoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FBBFC81BF7A4FA00C5B9DE /* BecoManager.swift */; };
 		A9FCEA9B1BE5582800236B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F49301BE51A9000AB4CAE /* ViewController.swift */; };
-		EAACC7711EE076EE000DB823 /* BecoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC76E1EE076EE000DB823 /* BecoSDK.framework */; };
-		EAACC7721EE076EE000DB823 /* BecoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC76E1EE076EE000DB823 /* BecoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EAACC7731EE076EE000DB823 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC76F1EE076EE000DB823 /* ObjcExceptionBridging.framework */; };
-		EAACC7741EE076EE000DB823 /* ObjcExceptionBridging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC76F1EE076EE000DB823 /* ObjcExceptionBridging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EAACC7751EE076EE000DB823 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC7701EE076EE000DB823 /* XCGLogger.framework */; };
-		EAACC7761EE076EE000DB823 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAACC7701EE076EE000DB823 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		EAACC7771EE076EE000DB823 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EAACC7741EE076EE000DB823 /* ObjcExceptionBridging.framework in Embed Frameworks */,
-				EAACC7721EE076EE000DB823 /* BecoSDK.framework in Embed Frameworks */,
-				EAACC7761EE076EE000DB823 /* XCGLogger.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		138D93F21E92935C0084C09E /* StartSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartSDK.swift; path = Beco/StartSDK.swift; sourceTree = SOURCE_ROOT; };
@@ -74,9 +52,6 @@
 		A984D8DA1BE69FD9001C1C3F /* ServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
 		A9FBBFC41BF7951800C5B9DE /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
 		A9FBBFC81BF7A4FA00C5B9DE /* BecoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BecoManager.swift; sourceTree = "<group>"; };
-		EAACC76E1EE076EE000DB823 /* BecoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BecoSDK.framework; path = "Library/Release-universal/BecoSDK.framework"; sourceTree = SOURCE_ROOT; };
-		EAACC76F1EE076EE000DB823 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = "Library/Release-universal/ObjcExceptionBridging.framework"; sourceTree = SOURCE_ROOT; };
-		EAACC7701EE076EE000DB823 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = "Library/Release-universal/XCGLogger.framework"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAACC7711EE076EE000DB823 /* BecoSDK.framework in Frameworks */,
-				EAACC7751EE076EE000DB823 /* XCGLogger.framework in Frameworks */,
 				A94910671C31EC530042FE58 /* CoreBluetooth.framework in Frameworks */,
 				A94910651C31EC360042FE58 /* CoreLocation.framework in Frameworks */,
-				EAACC7731EE076EE000DB823 /* ObjcExceptionBridging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,9 +87,6 @@
 		A92F49221BE51A9000AB4CAE = {
 			isa = PBXGroup;
 			children = (
-				EAACC76E1EE076EE000DB823 /* BecoSDK.framework */,
-				EAACC76F1EE076EE000DB823 /* ObjcExceptionBridging.framework */,
-				EAACC7701EE076EE000DB823 /* XCGLogger.framework */,
 				A92F492D1BE51A9000AB4CAE /* Beco */,
 				A9D945E21C38418E003CBADD /* Resources */,
 				A92F492C1BE51A9000AB4CAE /* Products */,
@@ -193,7 +162,6 @@
 				A92F49271BE51A9000AB4CAE /* Sources */,
 				A92F49281BE51A9000AB4CAE /* Frameworks */,
 				A92F49291BE51A9000AB4CAE /* Resources */,
-				EAACC7771EE076EE000DB823 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

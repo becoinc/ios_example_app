@@ -50,11 +50,16 @@ pages/helpPage | The help page that is shown when the user taps the "Help" icon 
 pages/appPage | The primary page that is shown while the app is scanning for location changes.  When the app detects a location change it refreshes this page with a valid oAuth token and the users handset id (hsid).  This page should be your major focus of development. | /index.html
 
 ## Get Started
-### Get the source code
+### Get the Example app source code
 Fork this repo or download the code to your local development environment.
+
+#### Get the Beco SDK
+Download the Beco SDK from here (https://www.beco.io/files/sdk/releases/iOS/)
+
 ### Setup the Web App
 See the ```/ExampleWebApp/README.md```
 ### Build the iOS App
+- Review the `Beco_iOS_Users_Guide.pdf` from the SDK download to learn how to add the SDK to the example app. 
 - Update /Resources/Initial.plist with the correct values. Particularly the credentials and the baseUrl.
 - Connect an iOS device and run the code. **You need to use a real device that is near a beacon for it to fully work correctly.**
 
